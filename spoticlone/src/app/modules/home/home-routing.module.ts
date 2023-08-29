@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { TracksModule } from '@modules/tracks/tracks.module';
-import { FavoriteModule } from '@modules/favorites/favorite/favorite.module';
+import { FavoriteModule } from '@modules/favorites/favorite.module';
 import { HistoryModule } from '@modules/history/history.module';
 
 
