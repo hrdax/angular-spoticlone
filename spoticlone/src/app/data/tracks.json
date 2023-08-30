@@ -1,13 +1,13 @@
 {
     "data": [{
             "_id": 1,
-            "name": "Getting Over",
-            "album": "One Love",
-            "cover": "https://jenesaispop.com/wp-content/uploads/2009/09/guetta_onelove.jpg",
+            "name": "Forsaken",
+            "album": "Systematic Chaos",
+            "cover": "https://upload.wikimedia.org/wikipedia/en/e/e3/Dream_Theater_-_Systematic_Chaos.jpg",
             "artist": {
-                "name": "David Guetta",
-                "nickname": "David Guetta",
-                "nationality": "FR"
+                "name": "Dream Theater",
+                "nickname": "Dream Theater",
+                "nationality": "US"
             },
             "duration": {
                 "start": 0,
@@ -17,13 +17,13 @@
         },
         {
             "_id": 2,
-            "name": "Snow Tha Product || BZRP Music Sessions #39",
-            "album": "BZRP Music Sessions",
-            "cover": "https://is5-ssl.mzstatic.com/image/thumb/Features125/v4/9c/b9/d0/9cb9d017-fcf6-28c6-81d0-e9ac5b0f359e/pr_source.png/800x800cc.jpg",
+            "name": "Glass Heart",
+            "album": "Lost Souls",
+            "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b2/d3/7e/b2d37e39-2aa7-d5ce-060e-7aed6fb92b97/cover.jpg/600x600bf-60.jpg",
             "artist": {
-                "name": "Snow",
-                "nickname": "Snow",
-                "nationality": "US"
+                "name": "Caskets",
+                "nickname": "Caskets",
+                "nationality": "Australian"
             },
             "duration": {
                 "start": 0,
@@ -33,13 +33,13 @@
         },
         {
             "_id": 3,
-            "name": "Calypso (Original Mix)",
-            "album": "Round Table Knights",
-            "cover": "https://cdns-images.dzcdn.net/images/cover/1db3f8f185e68f26feaf0b9d72ff1645/350x350.jpg",
+            "name": "Drowned in Emotion",
+            "album": "Lost Souls",
+            "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b2/d3/7e/b2d37e39-2aa7-d5ce-060e-7aed6fb92b97/cover.jpg/600x600bf-60.jpg",
             "artist": {
-                "name": "Round Table Knights",
-                "nickname": "Round Table Knights",
-                "nationality": "US"
+                "name": "Caskets",
+                "nickname": "Caskets",
+                "nationality": "Australian"
             },
             "duration": {
                 "start": 0,
@@ -49,13 +49,13 @@
         },
         {
             "_id": 4,
-            "name": "Bad Habits",
-            "album": "Ed Sheeran",
-            "cover": "https://www.lahiguera.net/musicalia/artistas/ed_sheeran/disco/11372/tema/25301/ed_sheeran_bad_habits-portada.jpg",
+            "name": "Like a Villain",
+            "album": "THE DEATH OF PEACE OF MIND",
+            "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/The_Death_of_Peace_of_Mind_Bad_Omens.png/220px-The_Death_of_Peace_of_Mind_Bad_Omens.png",
             "artist": {
-                "name": "Ed Sheeran",
-                "nickname": "Ed Sheeran",
-                "nationality": "UK"
+                "name": "Bad Omens",
+                "nickname": "Bad Omens",
+                "nationality": "US"
             },
             "duration": {
                 "start": 0,
@@ -65,13 +65,13 @@
         },
         {
             "_id": 5,
-            "name": "BEBE (Official Video)",
-            "album": "Giolì & Assia",
-            "cover": "https://i.scdn.co/image/ab67616d0000b27345ca41b0d2352242c7c9d4bc",
+            "name": "Limits",
+            "album": "Finding God Before God Finds Me",
+            "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/bd/02/4e/bd024ede-f9f4-cc4d-c7c7-a58dbb45b1f5/22UM1IM05474.rgb.jpg/1200x1200bb.jpg",
             "artist": {
-                "name": "Giolì & Assia",
-                "nickname": "Giolì & Assia",
-                "nationality": "IT"
+                "name": "Bad Omens",
+                "nickname": "Bad Omens",
+                "nationality": "US"
             },
             "duration": {
                 "start": 0,
@@ -81,13 +81,13 @@
         },
         {
             "_id": 6,
-            "name": "T.N.T. (Live At River Plate, December 2009)",
-            "album": "AC/DC",
-            "cover": "https://cdns-images.dzcdn.net/images/cover/ba5eaf2f3a49768164d0728b7ba64372/500x500.jpg",
+            "name": "Aligator Blood",
+            "album": "There Is A Hell Believe Me I've Seen It. There Is A Heaven Let's Keep It A Secret",
+            "cover": "https://i5.walmartimages.com/seo/There-Is-A-Hell-Believe-Me-I-ve-Seen-It-There-Is-A-Heaven-Let-s-Keep-It-A-Secret-CD_77b9a7d8-3c5e-4329-ac9d-a04bf59b1cf2_1.12db58afe9183f503089ce50d1c9f639.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
             "artist": {
-                "name": "AC/DC",
-                "nickname": "AC/DC",
-                "nationality": "US"
+                "name": "Bring Me The Horizon",
+                "nickname": "Bring Me The Horizon",
+                "nationality": "UK"
             },
             "duration": {
                 "start": 0,
@@ -97,12 +97,12 @@
         },
         {
             "_id": 7,
-            "name": "50 Cent - Candy Shop (feat. Olivia)",
-            "album": "50 Cent",
-            "cover": "https://i.scdn.co/image/ab67616d0000b27391f7222996c531b981e7bb3d",
+            "name": "Falling Away From Me",
+            "album": "Issues",
+            "cover": "https://upload.wikimedia.org/wikipedia/en/b/b6/KoRnIssues.jpg",
             "artist": {
-                "name": "50 Cent",
-                "nickname": "50 Cent",
+                "name": "Korn",
+                "nickname": "Korn",
                 "nationality": "US"
             },
             "duration": {
@@ -113,13 +113,13 @@
         },
         {
             "_id": 8,
-            "name": "Bésame💋",
-            "album": "Valentino Ft MTZ Manuel Turizo (Video Oficial)",
-            "cover": "https://i1.sndcdn.com/artworks-000247627460-1hqnjr-t500x500.jpg",
+            "name": "Time of Dying",
+            "album": "One-X",
+            "cover": "https://upload.wikimedia.org/wikipedia/en/c/cf/One_X.png",
             "artist": {
-                "name": "Valentino",
-                "nickname": "Valentino",
-                "nationality": "CO"
+                "name": "Three Days Grace",
+                "nickname": "Three Days Grace",
+                "nationality": "US"
             },
             "duration": {
                 "start": 0,
