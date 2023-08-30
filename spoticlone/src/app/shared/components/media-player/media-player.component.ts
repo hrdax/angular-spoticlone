@@ -7,11 +7,11 @@ import { TrackModel } from '@core/models/tracks.models';
   styleUrls: ['./media-player.component.css']
 })
 export class MediaPlayerComponent {
-  mockCover: TrackModel = {
-    cover: '',
-    album: '',
-    name: '',
-    url: '',
-    _id: 1
+  mockCover: any = {
+    cover: 'https://jenesaispop.com/wp-content/uploads/2009/09/guetta_onelove.jpg',
+    album: 'gioli',
+    name: 'gueta',
+    // url: '',
+    // _id: 1
   }
 }
