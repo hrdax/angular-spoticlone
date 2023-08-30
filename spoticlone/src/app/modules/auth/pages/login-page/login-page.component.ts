@@ -8,6 +8,7 @@ import { AuthService } from '@modules/auth/services/auth.service';
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent implements OnInit {
+  errorSession: boolean = false
   FormLogin: FormGroup = new FormGroup([])
 
   constructor(private authService: AuthService) {
@@ -33,6 +34,13 @@ export class LoginPageComponent implements OnInit {
     const { email, password } = this.FormLogin.value
 
     this.authService.sendCredentials(email, password)
+      .subscribe(responseok => {
+        console.log('sesion correcta')
+      },
+        err => {
+          this.errorSession = true
+          console.log('session incorrecta')
+        })
     
   }
 
