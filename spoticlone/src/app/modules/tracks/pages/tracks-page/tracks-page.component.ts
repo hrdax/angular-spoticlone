@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs'
 })
 export class TracksPageComponent implements OnInit, OnDestroy{
   TracksMetal: Array<TrackModel> = []
-  TracksElectro: Array<TrackModel> = []
+  TracksRandom: Array<TrackModel> = []
 
   listObservers$: Array<Subscription> = []
 
@@ -23,9 +23,16 @@ export class TracksPageComponent implements OnInit, OnDestroy{
     const observer1$ = this.tracksService.TracksMetal$
     .subscribe(response => {
       this.TracksMetal = response
+      this.TracksRandom = response
       console.log(response)
     })
-    this.listObservers$ = [observer1$]
+
+    const observer2$ = this.tracksService.TracksRandom$
+    .subscribe(response => {
+      this.TracksRandom = [...this.TracksRandom, ...response]
+      console.log('cancion random',response)
+    })
+    this.listObservers$ = [observer1$, observer2$]
   }
 
   ngOnDestroy(): void {
