@@ -2,6 +2,7 @@ import { FormGroup, FormControl, Validators} from '@angular/forms'
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '@modules/auth/services/auth.service';
 import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-login-page',
@@ -12,7 +13,8 @@ export class LoginPageComponent implements OnInit {
   errorSession: boolean = false
   FormLogin: FormGroup = new FormGroup([])
 
-  constructor(private authService: AuthService, private cookie: CookieService) {
+  constructor(private authService: AuthService, private cookie: CookieService,
+    private router: Router) {
 
   }
 
@@ -37,7 +39,7 @@ export class LoginPageComponent implements OnInit {
     this.authService.sendCredentials(email, password)
       .subscribe(responseok => {
         console.log('sesion correcta', responseok)
-        
+        this.router.navigate(['/', 'tracks'])
       },
         err => {
           this.errorSession = true
