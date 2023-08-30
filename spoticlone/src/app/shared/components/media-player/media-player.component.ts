@@ -9,28 +9,17 @@ import { Subscription } from 'rxjs'
   styleUrls: ['./media-player.component.css']
 })
 export class MediaPlayerComponent implements OnInit, OnDestroy{
-  mockCover: TrackModel = {
-    cover: 'https://upload.wikimedia.org/wikipedia/en/e/e3/Dream_Theater_-_Systematic_Chaos.jpg',
-    album: 'Dream Theater',
-    name: 'Forsaken',
-    url: 'http://locahost/track.mp3',
-    _id: 1
-  }
 
-  constructor(private multimediaService: MultimediaService) {
+
+  constructor(public multimediaService: MultimediaService) {
 
   }
 
   listObservers$: Array<Subscription> = []
 
   ngOnInit(): void {
-    const observer1$: Subscription = this.multimediaService.callback.subscribe(
-      (response: TrackModel) => {
-        
-      }
-    )
-
-    this.listObservers$ = [observer1$]
+    
+    
   }
 
   ngOnDestroy(): void {
