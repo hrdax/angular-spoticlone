@@ -8,9 +8,9 @@ import { TrackModel } from '@core/models/tracks.models';
 })
 export class MediaPlayerComponent {
   mockCover: any = {
-    cover: 'https://jenesaispop.com/wp-content/uploads/2009/09/guetta_onelove.jpg',
-    album: 'gioli',
-    name: 'gueta',
+    cover: 'https://upload.wikimedia.org/wikipedia/en/e/e3/Dream_Theater_-_Systematic_Chaos.jpg',
+    album: 'Dream Theater',
+    name: 'Forsaken',
     // url: '',
     // _id: 1
   }
