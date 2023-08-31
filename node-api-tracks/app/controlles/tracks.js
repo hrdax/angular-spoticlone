@@ -163,7 +163,7 @@ const getItems = async(req, res) => {
                     "start": 0,
                     "end": 333
                 },
-                "url": `${URL_PUBLIC}/track-summetime.mp3`
+                "url": `${URL_PUBLIC}/track-summertime.mp3`
             },
             {
                 "_id": 11,
