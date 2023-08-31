@@ -37,13 +37,30 @@ export class TrackService {
         )
   }
 
+  getPopTracks$(): Observable<any> {
+    return this.httpClient.get(`${this.URL}/tracks`)
+      .pipe(
+        map(({data}: any) => {
+          return data.filter((track: TrackModel) => track._id > 9)
+        }),
+      )
+  }
+
+  getMetalTracks$(): Observable<any> {
+    return this.httpClient.get(`${this.URL}/tracks`)
+      .pipe(
+        map(({data}: any) => {
+          return data.filter((track: TrackModel) => track._id < 10)
+        }),
+      )
+  }
+
   getAllRandom$(): Observable<any> {
     return this.httpClient.get(`${this.URL}/tracks`)
       .pipe(
         map(({data}: any) => {
           return data
-        })
-        // mergeMap(({data}: any) => this.skipById(data, 1)),
+        }),
         // map(({data}: any) => {
         //   return data.reverse()
         // }),
@@ -51,5 +68,5 @@ export class TrackService {
         //   return dataReverted.filter((track: TrackModel) => track._id != 7)
         // })
       )
-}
+  }
 }
