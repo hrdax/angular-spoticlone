@@ -10,6 +10,7 @@ import { Subscription } from 'rxjs'
 })
 export class TracksPageComponent implements OnInit, OnDestroy{
   TracksMetal: Array<TrackModel> = []
+  TracksPop: Array<TrackModel> = []
   TracksRandom: Array<TrackModel> = []
 
   listObservers$: Array<Subscription> = []
@@ -19,21 +20,33 @@ export class TracksPageComponent implements OnInit, OnDestroy{
   }
 
   ngOnInit(): void {
-      this.loadAllData()
       this.loadRandomData()
+      this.loadPopData()
+      this.loadMetalData()
   }
 
   loadAllData(): void {
-    this.tracksService.getAllTracks$()
-      .subscribe((response: TrackModel[]) => {
-        this.TracksMetal = response
-      })
+    
   }
 
   loadRandomData(): void {
     this.tracksService.getAllRandom$()
       .subscribe((response: TrackModel[]) => {
         this.TracksRandom = response
+      })
+  }
+
+  loadPopData(): void {
+    this.tracksService.getPopTracks$()
+      .subscribe((response: TrackModel[]) => {
+        this.TracksPop = response
+      })
+  }
+
+  loadMetalData(): void {
+    this.tracksService.getMetalTracks$()
+      .subscribe((response: TrackModel[]) => {
+        this.TracksMetal = response
       })
   }
 
