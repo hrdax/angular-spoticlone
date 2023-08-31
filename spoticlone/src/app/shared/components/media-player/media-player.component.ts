@@ -17,6 +17,16 @@ export class MediaPlayerComponent implements OnInit, OnDestroy{
 
   listObservers$: Array<Subscription> = []
   state: string = 'paused'
+  stateh: string = 'nclicked'
+
+  changeHeart(): void {
+    if (this.stateh === 'nclicked'){
+      this.stateh = 'clicked'
+    } else {
+      this.stateh = 'nclicked'
+    }
+
+  }
 
   ngOnInit(): void {
     const observer1$ = this.multimediaService.playerStatus$

@@ -26,8 +26,13 @@
             <h5 class="track-title sub-title">{{mockCover?.artist.name}}</h5>
         </div>
         <div class="track-like">
-            <button class="btn-like">
-                <i class="uil uil-heart"></i>
+            <button (click)="changeHeart()" class="btn-like">
+                <i 
+                [ngClass]="{
+                    'uil-heart':stateh === 'nclicked',
+                    'uil-heart-medical':stateh !== 'nclicked'
+                }"
+                class="uil "></i>
             </button>
         </div>
     </div>
