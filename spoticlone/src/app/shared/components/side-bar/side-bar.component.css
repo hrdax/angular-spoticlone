@@ -39,6 +39,7 @@
 
 .side-bar__separator.line-separator {
     border-bottom: solid 1px var(--color-2);
+    
 }
 
 .side-bar__list.list-three .list-wrapper-item {
@@ -47,4 +48,12 @@
 
 .side-bar__list li {
     cursor: pointer;
+}
+
+.git-a {
+  position: absolute;
+  bottom: 100px; 
+  right: 140px;
+  padding: 10px;
+  z-index: 999;
 }
