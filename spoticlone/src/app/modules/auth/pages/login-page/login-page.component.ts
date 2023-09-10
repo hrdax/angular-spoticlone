@@ -12,6 +12,12 @@ import { Router } from '@angular/router'
 export class LoginPageComponent implements OnInit {
   errorSession: boolean = false
   FormLogin: FormGroup = new FormGroup([])
+  
+  loading = false;
+
+  load(): void {
+    this.loading = true;
+  }
 
   constructor(private authService: AuthService, private cookie: CookieService,
     private router: Router) {
@@ -34,11 +40,12 @@ export class LoginPageComponent implements OnInit {
     )
   }
   sendLogin(): void {
+    this.load()
     const { email, password } = this.FormLogin.value
 
     this.authService.sendCredentials(email, password)
       .subscribe(responseok => {
-        console.log('sesion correcta', responseok)
+        this.loading = false
         this.router.navigate(['/', 'tracks'])
       },
         err => {

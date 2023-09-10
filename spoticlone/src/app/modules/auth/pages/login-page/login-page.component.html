@@ -24,6 +24,10 @@
             </div>
             <div class="form-action">
                 <button [disabled]="FormLogin.invalid" class="login social-btn">Iniciar sesión</button>
+                <div class="loading-container">
+                    <span *ngIf="loading === true">Encendiendo Servidor Por Favor Espere</span>
+                    <span class="spinner" *ngIf="loading === true"></span>
+                </div>                  
             </div>
         </form>
     </div>
